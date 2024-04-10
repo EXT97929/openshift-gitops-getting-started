@@ -23,7 +23,7 @@ spec:
       containers:
       - name: spring-petclinic
         imagePullPolicy: Always
-        image: default/spring-petclinic:latest
+        image: default-route-openshift-image-registry.apps-crc.testing/default/spring-petclinic
         livenessProbe:
           failureThreshold: 3
           httpGet:
