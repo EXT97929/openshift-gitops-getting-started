@@ -23,7 +23,7 @@ spec:
       containers:
       - name: spring-petclinic
         imagePullPolicy: Always
-        image: the-my-app
+        image: my-demo-app:latest
         livenessProbe:
           failureThreshold: 3
           httpGet:

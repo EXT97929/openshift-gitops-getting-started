@@ -1,9 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
 resources:
 - deployment.yaml
 - service.yaml
 - route.yaml
 
 images:
-- name: the-my-app
+- name: my-demo-app
   newName: image-registry.openshift-image-registry.svc:5000/default/spring-petclinic
   newTag: latest
