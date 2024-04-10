@@ -4,6 +4,6 @@ resources:
 - route.yaml
 
 images:
-  - name: the-my-app
-  - newName: image-registry.openshift-image-registry.svc:5000/default/spring-petclinic
-    newTag: latest
+- name: the-my-app
+- newName: image-registry.openshift-image-registry.svc:5000/default/spring-petclinic
+  newTag: latest
