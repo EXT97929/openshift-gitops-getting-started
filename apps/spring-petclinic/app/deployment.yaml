@@ -23,7 +23,7 @@ spec:
       containers:
       - name: spring-petclinic
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/default/spring-petclinic:8986902b215a2c011142c1ac72b0e4292daed54b
+        image: image-registry.openshift-image-registry.svc:5000/default/spring-petclinic:9e808941e7ecf57626ba34934dc399d0292d2590
         resources:
           requests:
             memory: "128Mi"
