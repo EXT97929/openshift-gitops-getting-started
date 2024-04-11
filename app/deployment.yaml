@@ -23,7 +23,17 @@ spec:
       containers:
       - name: spring-petclinic
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/default/spring-petclinic:cae8bbe1a4038a3b657f01aecd2e37175c0d0586 
+        image: image-registry.openshift-image-registry.svc:5000/default/spring-petclinic:cae8bbe1a4038a3b657f01aecd2e37175c0d0586
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /actuator/health
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 45
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 5
         livenessProbe:
           failureThreshold: 3
           httpGet:
