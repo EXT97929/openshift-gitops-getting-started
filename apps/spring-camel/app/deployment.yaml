@@ -23,7 +23,7 @@ spec:
       containers:
       - name: spring-camel
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/default/spring-camel:c491b50bc63ce47bbefd88e80299957b81ba0b67
+        image: image-registry.openshift-image-registry.svc:5000/default/spring-camel:0a168aec8aeca2bcc507ac0d16933fcb4fff95c0
         resources:
           requests:
             memory: "128Mi"
