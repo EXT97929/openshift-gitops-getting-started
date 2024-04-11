@@ -3,27 +3,27 @@ kind: Deployment
 metadata:
   annotations:
   labels:
-    app: spring-petclinic
+    app: spring-camel
     app.kubernetes.io/component: web
-    app.kubernetes.io/instance: spring-petclinic
-    app.kubernetes.io/name: spring-petclinic
-    app.kubernetes.io/part-of: spring-petclinic
+    app.kubernetes.io/instance: spring-camel
+    app.kubernetes.io/name: spring-camel
+    app.kubernetes.io/part-of: spring-camel
     app.openshift.io/runtime: java
-  name: spring-petclinic
+  name: spring-camel
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: spring-petclinic
+      app: spring-camel
   template:
     metadata:
       labels:
-        app: spring-petclinic
+        app: spring-camel
     spec:
       containers:
-      - name: spring-petclinic
+      - name: spring-camel
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/default/spring-petclinic:8986902b215a2c011142c1ac72b0e4292daed54b
+        image: image-registry.openshift-image-registry.svc:5000/default/spring-camel:c491b50bc63ce47bbefd88e80299957b81ba0b67
         resources:
           requests:
             memory: "128Mi"

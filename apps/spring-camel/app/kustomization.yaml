@@ -5,5 +5,5 @@ resources:
 
 images:
 - name: my-demo-app
-  newName: image-registry.openshift-image-registry.svc:5000/default/spring-petclinic
+  newName: image-registry.openshift-image-registry.svc:5000/default/spring-camel:c491b50bc63ce47bbefd88e80299957b81ba0b67
   newTag: latest
